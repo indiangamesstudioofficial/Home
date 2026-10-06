@@ -1,25 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE<!DOCTYPE html>
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Games Studio</title>
     <style>
-        body { font-family: sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
-        header { background: #333; color: #fff; padding: 2rem 0; }
-        section { padding: 2rem; }
-        .btn { display: inline-block; padding: 10px 20px; background: #e91e63; color: #fff; text-decoration: none; border-radius: 5px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Top Bar with Logo */
+        header {
+            width: 100%;
+            background-color: #000000;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Main Content Area */
+        main {
+            width: 90%;
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .game-section {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-section h2 {
+            font-size: 2rem;
+            color: #ff9933; /* Indian Flag Orange Accent */
+            margin-bottom: 15px;
+        }
+
+        .game-section p {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 25px;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background-color: #138808; /* Indian Flag Green Accent */
+            color: #ffffff;
+            padding: 12px 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-download:hover {
+            background-color: #0e6306;
+        }
     </style>
 </head>
 <body>
+
+    <!-- Header Section with Logo -->
     <header>
-        <h1>Welcome to Indian Games Studio</h1>
-        <p>Creating amazing mobile games for everyone.</p>
+        <div class="logo-container">
+            <!-- Replace 'logo.png' with your actual image path or URL if hosted -->
+            <img src="logo.png" alt="Indian Games Studio Logo" class="logo-img">
+        </div>
     </header>
-    <section>
-        <h2>Our Latest Game</h2>
-        <p>Check out our latest release and start playing now!</p>
-        <a href="#" class="btn">Play Now</a>
-    </section>
+
+    <!-- Main Section: New Game Info -->
+    <main>
+        <div class="game-section">
+            <h2>NEW GAME</h2>
+            <p>Humara naya game jald hi aane wala hai! Yahan par game ki details aur download link hoga.</p>
+            <a href="#" class="btn-download">Download APK</a>
+        </div>
+    </main>
+
 </body>
 </html>
+ 
